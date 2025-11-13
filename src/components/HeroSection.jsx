@@ -1,5 +1,7 @@
 import React from "react";
 import Developer from "../assets/Developer.png";
+import Developer1 from "../assets/Developer1.png";
+import Developer2 from "../assets/Developer2.png";
 import Bg from "../assets/Bg.png";
 import "./HeroSection.css";
 import Logo1 from "../assets/Logo1.png";
@@ -30,7 +32,11 @@ export default function HeroSection() {
           </div>
           {/* Blinking Developer Image */}
           <div className="hero-right">
-            <img src={Developer} alt="Developer at Work" />
+            <div className="animation-wrapper">
+              <img src={Developer} alt="Dev " className="float-img img1" />
+              <img src={Developer1} alt="Dev 1" className="float-img img2" />
+              <img src={Developer2} alt="Dev 2" className="float-img img3" />
+            </div>
           </div>
         </div>
 
