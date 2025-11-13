@@ -28,7 +28,7 @@ export default function HeroSection() {
               <button className="secondary-btn">Explore Our Work →</button>
             </div>
           </div>
-
+          {/* Blinking Developer Image */}
           <div className="hero-right">
             <img src={Developer} alt="Developer at Work" />
           </div>
