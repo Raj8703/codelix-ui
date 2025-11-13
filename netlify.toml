@@ -1,13 +1,3 @@
 [build]
   command = "npm run build"
   publish = "dist"
-
-# Optional: If you have a specific Node.js version requirement
-# [build.environment]
-#   NODE_VERSION = "18" # or your desired version
-
-# Optional: Redirects (example)
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
