@@ -1,0 +1,87 @@
+.navbar {
+  width: 100%;
+  max-width: 1240px;
+  height: 52px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.navbar-logo img {
+  width: 120px;
+  height: 47px;
+}
+/* Default link color (white) */
+
+/* ✅ Case study page: ONLY nav text becomes black */
+.navbar.navbar-dark .navbar-links li {
+  color: black !important;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+.navbar-links {
+  color: #fff;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.navbar-links li {
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.navbar-links .navbar-links li:hover {
+  color: #3b82f6;
+}
+.contact-btn {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border: none;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 166px;
+  height: 48px;
+  white-space: nowrap;
+} /* ======================= 📱 Responsive Section ======================= */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  } /* Hide Contact button on mobile */
+  .contact-btn {
+    display: none;
+  }
+  .navbar-links {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    display: none;
+    border-top: 1px solid rgba(0, 128, 255, 0.3);
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}

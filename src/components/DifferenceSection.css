@@ -1,0 +1,306 @@
+.difference {
+  background: #fff;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.difference-container {
+  width: 1240px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0a0a0a;
+}
+
+/* ===== Heading ===== */
+.difference-title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0a0a0a;
+  line-height: 1.3;
+  width: 982px;
+  height: 52px;
+}
+
+.difference-title .highlight {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #3e7dfc;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* ===== Content Section ===== */
+.difference-content {
+  width: 1240px;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Section ===== */
+.difference-left {
+  height: 240px;
+  width: 711px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #131926;
+}
+
+.left-subtext {
+  font-size: 20px;
+  color: #6c788f;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.left-description {
+  font-size: 16px;
+  color: #444a5a;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.brand {
+  color: #3e7dfc;
+  font-weight: 600;
+}
+
+.left-quote {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 10px;
+}
+
+.left-quote .line {
+  color: #6c788f;
+  margin-right: 8px;
+}
+
+/* ===== Right Stats Section ===== */
+.difference-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 499px;
+  height: 240px;
+}
+
+.stat-card {
+  border: 1px solid #abb3cb;
+  padding: 24px;
+  transition: background 0.3s ease;
+  background: #fff;
+  width: 241.5px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-card:hover {
+  background: #f7faff;
+}
+
+.stat-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #202020;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #202020;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* ===================== */
+/* ===== TABLET ======== */
+/* ===================== */
+@media (max-width: 1024px) {
+  .difference-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .difference-content {
+    width: 100%;
+    height: auto;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .difference-left {
+    width: 100%;
+    height: auto;
+  }
+
+  .difference-right {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+  }
+
+  .left-heading {
+    font-size: 26px;
+  }
+
+  .left-subtext {
+    font-size: 18px;
+  }
+
+  .left-description {
+    font-size: 15px;
+  }
+
+  .left-quote {
+    font-size: 22px;
+  }
+
+  .stat-card {
+    height: 100px;
+  }
+
+  .stat-number {
+    font-size: 34px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+/* ===================== */
+/* ===== MOBILE ======== */
+/* ===================== */
+@media (max-width: 768px) {
+  .difference {
+    padding: 40px 0;
+  }
+
+  .difference-title {
+    font-size: 24px;
+    width: 90%;
+    height: auto;
+  }
+
+  .difference-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .difference-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .left-heading {
+    font-size: 22px;
+  }
+
+  .left-subtext,
+  .left-description {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .left-quote {
+    font-size: 20px;
+  }
+
+  .difference-right {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .stat-card {
+    height: auto;
+    padding: 18px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+/* ===================== */
+/* ===== SMALL MOBILE === */
+/* ===================== */
+@media (max-width: 480px) {
+  .difference-title {
+    font-size: 22px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .difference-content {
+    gap: 16px;
+  }
+
+  .left-heading {
+    font-size: 20px;
+  }
+
+  .left-subtext,
+  .left-description {
+    font-size: 14px;
+  }
+
+  .left-quote {
+    font-size: 18px;
+  }
+
+  .difference-right {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .stat-card {
+    width: 100%;
+    padding: 16px 12px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .stat-number {
+    font-size: 30px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    margin: 0;
+  }
+}

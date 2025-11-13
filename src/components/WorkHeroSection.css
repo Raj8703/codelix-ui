@@ -1,0 +1,39 @@
+.work-hero {
+  width: 100%;
+  height: 488px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.work-content {
+  height: 140px;
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-content h1 {
+  height: 64px;
+  width: 120px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 64px;
+}
+
+.work-content p {
+  width: 706px;
+  height: 72px;
+  font-size: 20px;
+  max-width: 720px;
+  line-height: 28px;
+  color: #d6d6d6;
+}

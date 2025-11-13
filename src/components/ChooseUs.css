@@ -1,0 +1,83 @@
+.chooseus-section {
+  width: 1240px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+  color: #1a1a1a;
+  margin-top: 100px;
+}
+
+.chooseus-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.chooseus-header h2 {
+  width: 404px;
+  height: 52px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.chooseus-header h2 span {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #004aad;
+}
+
+.chooseus-header p {
+  width: 722px;
+  height: 40px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.chooseus-grid {
+  width: 1240px;
+  height: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #ddd;
+}
+
+.chooseus-card {
+  width: 413.33px;
+  height: 180px;
+  border: 1px solid #ddd;
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.choose-content {
+  width: 353.33px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choose-content h3 {
+  width: 353.33px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.choose-content p {
+  width: 353.33px;
+  height: 80px;
+  font-size: 14px;
+  color: #555;
+  line-height: 20px;
+}
