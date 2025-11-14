@@ -91,8 +91,8 @@
 .tag-container span {
   border: 1px solid #cfd4da;
   padding: 6px 12px;
-  border-radius: 4px;
-  background: #f9f9f9;
+  /* border-radius: 4px; */
+  /* background: #f9f9f9; */
 }
 
 .explore-btn {
@@ -100,12 +100,14 @@
   color: white;
   padding: 10px 18px;
   border: none;
-
   cursor: pointer;
   font-weight: 500;
 }
 .explore-btn:hover {
-  background-color: #2563eb;
+  background: #fff;
+  color: #006aff;
+  box-shadow: 4px 4px 0 #006aff;
+  transform: translate(-3px, -3px);
 }
 
 /* IMAGE BOX (Gradient background + heading inside) */

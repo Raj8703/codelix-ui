@@ -111,9 +111,10 @@
 }
 
 .read-btn-blog:hover {
-  background: #0c2d57;
-  color: #fff;
-  border-color: #0c2d57;
+  background: #fff;
+  color: black;
+  box-shadow: 4px 4px 0 black;
+  transform: translate(-3px, -3px);
 }
 
 .arrow {

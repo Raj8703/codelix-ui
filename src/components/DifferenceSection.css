@@ -115,7 +115,10 @@
 }
 
 .stat-card:hover {
-  background: #f7faff;
+  background: #fff;
+  color: blue;
+  box-shadow: 4px 4px 0 #006aff;
+  /* transform: translate(-3px, -3px); */
 }
 
 .stat-number {
@@ -123,6 +126,11 @@
   font-weight: 700;
   color: #202020;
   line-height: 1;
+}
+
+.stat-card:hover .stat-number,
+.chooseus-card:hover .stat-number {
+  color: #006aff; /* or your preferred blue */
 }
 
 .stat-label {

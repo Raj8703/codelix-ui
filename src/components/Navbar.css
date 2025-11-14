@@ -3,7 +3,7 @@
   max-width: 1240px;
   height: 52px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,24 +43,63 @@
   font-size: 14px;
   transition: color 0.3s ease;
 }
-.navbar-links .navbar-links li:hover {
+
+.navbar-links li:hover {
   color: #3b82f6;
 }
+
+.navbar-links.active {
+  color: #3b82f6;
+}
+/* .navbar-links .navbar-links li:hover {
+  color: #3b82f6;
+} */
 .contact-btn {
-  background: linear-gradient(90deg, #2563eb, #3b82f6);
-  border: none;
+  background: #2563eb;
   color: #fff;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
+  border: 1.5px solid #2563eb;
   font-size: 16px;
-  transition: all 0.3s ease;
-  width: 166px;
+  font-weight: 500;
+  padding: 12px 22px;
+  width: 180px;
   height: 48px;
-  white-space: nowrap;
-} /* ======================= 📱 Responsive Section ======================= */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s ease;
+  box-shadow: none;
+}
+
+/* Hover effect: invert + subtle lift */
+.contact-btn:hover {
+  background: #fff;
+  color: #2563eb;
+  box-shadow: 4px 4px 0 #2563eb;
+  transform: translate(-3px, -3px);
+}
+
+/* Arrow icon */
+.contact-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Arrow lifts slightly on hover */
+.contact-btn:hover svg {
+  transform: translateY(-3px);
+}
+
+/* Optional active press-down */
+.contact-btn:active {
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 0 #2563eb;
+}
+
+/* ======================= 📱 Responsive Section ======================= */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;

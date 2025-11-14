@@ -1,7 +1,7 @@
 .services {
   width: 100%;
-  background: #fff;
-  padding: 60px 0;
+  background: #f5f7fc;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
 }
@@ -55,6 +55,7 @@
   height: 438px;
 }
 
+/* ========== Service Card ========== */
 .service-card {
   width: 620px;
   height: 146px;
@@ -65,7 +66,10 @@
   border-right: 1px solid #abb3cb;
   border-bottom: 1px solid #abb3cb;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .service-card:nth-child(2n) {
@@ -74,6 +78,38 @@
 
 .service-card:nth-last-child(-n + 2) {
   border-bottom: none;
+}
+
+/* Hover animation */
+.service-card:hover {
+  background: #0a0e1a;
+  transform: translateY(-4px);
+}
+
+/* Subtle blue glow overlay */
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 99, 235, 0.15),
+    rgba(59, 130, 246, 0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+/* Keep text above the glow layer */
+.service-text,
+.arrow-icon {
+  position: relative;
+  z-index: 1;
 }
 
 .service-text {
@@ -91,6 +127,7 @@
   font-size: 20px;
   font-weight: 600;
   color: #0a0a0a;
+  transition: color 0.3s ease;
 }
 
 .service-text p {
@@ -99,13 +136,27 @@
   font-size: 14px;
   color: #6c788f;
   line-height: 1.4;
+  transition: color 0.3s ease;
 }
 
+/* Arrow */
 .arrow-icon {
   width: 30px;
   height: 30px;
   color: #131926;
   margin-top: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover text + arrow color */
+.service-card:hover .service-text h3,
+.service-card:hover .service-text p {
+  color: #ffffff;
+}
+
+.service-card:hover .arrow-icon {
+  color: #ffffff;
+  transform: translateX(6px);
 }
 
 /* ----------------------------- */
