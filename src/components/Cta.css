@@ -15,21 +15,27 @@
   content: "";
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 150px;
   height: 100%;
-  border: 2px solid rgba(86, 152, 255, 0.4);
+  border: 10px solid rgba(32, 17, 241, 0.4);
   border-radius: 50%;
-  filter: blur(2px);
+
+  /* filter: blur(2px); */
 }
 
 .cta-wrapper::before {
-  left: -120px;
-  border-left: none;
+  left: 25rem;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
 }
 
 .cta-wrapper::after {
-  right: -120px;
-  border-right: none;
+  right: 25rem;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  /* border-right: none; */
 }
 
 .cta-content {
